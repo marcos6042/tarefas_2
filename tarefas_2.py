@@ -31,12 +31,6 @@ def init_db():
         )
     ''')
     conn.execute('''
-        CREATE TABLE IF NOT EXISTS setores (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            nome_setor TEXT NOT NULL UNIQUE
-        )
-    ''')
-    conn.execute('''
         CREATE TABLE IF NOT EXISTS categorias (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             nome_categoria TEXT NOT NULL UNIQUE
